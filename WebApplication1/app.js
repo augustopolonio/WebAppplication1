@@ -17,11 +17,18 @@ Ext.application({
     // will gain a "viewport" plugin if it does not extend Ext.Viewport. With the
     // modern toolkit, the main view will be added to the Viewport.
     //
-    mainView: 'WebApplication1.view.main.Main'
+    mainView: 'WebApplication1.view.main.Main',
 	
     //-------------------------------------------------------------------------
     // Most customizations should be made to WebApplication1.Application. If you need to
     // customize this file, doing so below this section reduces the likelihood
     // of merge conflicts when upgrading to new versions of Sencha Cmd.
     //-------------------------------------------------------------------------
+
+    launch: function()
+    {
+        Ext.fly('appLoadingIndicator').destroy();
+    }
+
+    
 });
