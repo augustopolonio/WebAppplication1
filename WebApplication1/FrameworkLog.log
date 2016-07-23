@@ -1,0 +1,48 @@
+2016-07-23 09:14:39,202 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 09:14:39,207 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 09:14:39,212 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 09:14:39,212 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 09:14:42,117 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 09:14:42,117 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 09:14:44,787 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 09:14:44,787 [INFO] ========== FRAMEWORK INICIALIZADO ==========
+2016-07-23 09:35:32,633 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 09:35:32,638 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 09:35:32,639 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 09:35:32,639 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 09:35:33,624 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 09:35:33,624 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 09:35:35,008 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 09:35:35,008 [INFO] ========== FRAMEWORK INICIALIZADO ==========
+2016-07-23 10:16:01,975 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 10:16:01,979 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 10:16:01,980 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 10:16:01,980 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 10:16:02,964 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 10:16:02,964 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 10:16:04,741 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 10:16:04,741 [INFO] ========== FRAMEWORK INICIALIZADO ==========
+2016-07-23 10:18:59,388 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 10:18:59,392 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 10:18:59,393 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 10:18:59,393 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 10:19:00,399 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 10:19:00,399 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 10:19:01,696 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 10:19:01,696 [INFO] ========== FRAMEWORK INICIALIZADO ==========
+2016-07-23 10:23:26,814 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 10:23:26,817 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 10:23:26,818 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 10:23:26,818 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 10:23:27,695 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 10:23:27,695 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 10:23:28,945 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 10:23:28,945 [INFO] ========== FRAMEWORK INICIALIZADO ==========
+2016-07-23 11:31:08,139 [INFO] ========== INICIALIZANDO FRAMEWORK ==========
+2016-07-23 11:31:08,150 [INFO] Inicializando CWI.Framework.Logging.LogManager
+2016-07-23 11:31:08,153 [INFO] CWI.Framework.Logging.LogManager inicializado
+2016-07-23 11:31:08,154 [INFO] StartDataFactory == true, inicializando CWI.Framework.Data.Factory
+2016-07-23 11:31:09,612 [INFO] CWI.Framework.Data.Factory inicializada
+2016-07-23 11:31:09,612 [INFO] Inicializando CWI.Framework.Data.Util.DomainBuilder
+2016-07-23 11:31:11,273 [INFO] CWI.Framework.Data.Util.DomainBuilder inicializado
+2016-07-23 11:31:11,274 [INFO] ========== FRAMEWORK INICIALIZADO ==========
