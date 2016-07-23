@@ -5269,7 +5269,8 @@
     <Content Include="ext\resources\ext-watermark\style.css" />
     <Content Include="ext\sass\example\fashion.html" />
     <Content Include="Global.asax" />
-    <Content Include="index.html" />
+    <Content Include="index.aspx" />
+    <Content Include="index_old.html" />
     <Content Include="modern\src\view\main\List.js" />
     <Content Include="modern\src\view\main\Main.js" />
     <Content Include="modern\src\view\main\UsersICG.js" />
@@ -5282,6 +5283,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\IUsuariosICG.cs" />
@@ -6732,7 +6740,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>51345</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:49580/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
