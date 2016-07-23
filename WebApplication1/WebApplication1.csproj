@@ -5270,7 +5270,6 @@
     <Content Include="ext\sass\example\fashion.html" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
-    <Content Include="index_old.html" />
     <Content Include="modern\src\view\main\List.js" />
     <Content Include="modern\src\view\main\Main.js" />
     <Content Include="modern\src\view\main\UsersICG.js" />
