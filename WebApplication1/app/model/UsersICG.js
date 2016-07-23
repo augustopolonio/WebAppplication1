@@ -21,9 +21,7 @@
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         timeout: 5 * 60 * 1000,
         api: {
-            //read: '../../../../services/Usuarios.asmx/GetUsuarios'
-            read: 'http://localhost:49580/UsuariosICG/GetUsuarios'
-        //read: 'http://192.168.0.11:8383/UsuariosICG/GetUsuarios'
+        	read: window.UrlWebApp1 + 'UsuariosICG/GetUsuarios'
         },
         reader: {
             type: 'json',
