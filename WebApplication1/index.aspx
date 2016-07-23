@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebApplication1.index" %>
+
 <!DOCTYPE HTML>
 <html manifest="">
 <head>
@@ -82,13 +84,16 @@
 
             //profile = 'modern';
 
+            //TODO: Melhorar local da url (trazer do webconfig)            
+            window.UrlWebApp1 = "<%= GetUrlWebApp1() %>";
+
             Ext.manifest = profile; // this name must match a build profile name
 
             // This function is called once the manifest is available but before
             // any data is pulled from it.
             //
             //return function (manifest) {
-                // peek at / modify the manifest object
+            // peek at / modify the manifest object
             //};
         };
     </script>
@@ -106,3 +111,4 @@
     </div>
 </body>
 </html>
+
