@@ -3,6 +3,7 @@
     xtype: 'UsersICG',
 
     requires: [
+        'Ext.*',
         'WebApplication1.store.UsersICG',
         'WebApplication1.model.UsersICG'
     ],
@@ -17,6 +18,13 @@
                 tap: 'onAddClick'
             },
             text: 'Carregar'
+        },
+        {
+            xtype: 'button',
+            listeners: {
+                tap: 'anexarImagem'
+            },
+            text: 'Anexar Imagem'
         },
         {
             xtype: 'grid',
