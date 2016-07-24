@@ -82,6 +82,7 @@
     <Content Include="app\store\UsersICG.js" />
     <Content Include="app\view\main\MainController.js" />
     <Content Include="app\view\main\MainModel.js" />
+    <Content Include="build.xml" />
     <Content Include="classic\src\view\main\Groups.js" />
     <Content Include="classic\src\view\main\List.js" />
     <Content Include="classic\src\view\main\Main.js" />
@@ -100,7 +101,9 @@
     <Content Include="ext\.sencha\package\slice-impl.xml" />
     <Content Include="ext\.sencha\package\sub-builds.xml" />
     <Content Include="ext\.sencha\workspace\plugin.xml" />
-    <Content Include="ext\build.xml" />
+    <Content Include="ext\build.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ext\build\ext-all-debug.js" />
     <Content Include="ext\build\ext-all-rtl-debug.js" />
     <Content Include="ext\build\ext-all-rtl-sandbox-debug.js" />
@@ -2551,6 +2554,9 @@
     <Content Include="ext\modern\modern\src\dataview\ListItemHeader.js" />
     <Content Include="ext\modern\modern\src\dataview\NestedList.js" />
     <Content Include="ext\modern\modern\src\Decorator.js" />
+    <Content Include="ext\modern\modern\src\device\camera\Abstract.js" />
+    <Content Include="ext\modern\modern\src\device\camera\Cordova.js" />
+    <Content Include="ext\modern\modern\src\device\camera\Simulator.js" />
     <Content Include="ext\modern\modern\src\field\Checkbox.js" />
     <Content Include="ext\modern\modern\src\field\DatePicker.js" />
     <Content Include="ext\modern\modern\src\field\DatePickerNative.js" />
@@ -5270,6 +5276,7 @@
     <Content Include="ext\sass\example\fashion.html" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="index.html" />
     <Content Include="modern\src\view\main\List.js" />
     <Content Include="modern\src\view\main\Main.js" />
     <Content Include="modern\src\view\main\UsersICG.js" />
@@ -6718,14 +6725,20 @@
     <Content Include="classic\sass\src\view\main\Main.scss" />
     <Content Include="classic\sass\var\Readme.md" />
     <Content Include="resources\Readme.md" />
-    <None Include="Properties\PublishProfiles\Publish WebApp1 - Local.pubxml" />
+    <Content Include="app.json" />
+    <Content Include="classic.json" />
+    <Content Include="modern.json" />
+    <None Include="Properties\PublishProfiles\Teste.pubxml" />
+    <None Include="Properties\PublishProfiles\WebApplication1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="workspace.json" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
