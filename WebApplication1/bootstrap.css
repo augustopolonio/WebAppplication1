@@ -5,5 +5,5 @@
  * to the most recently built CSS file for the application to allow index.html
  * in the development directory to load properly (i.e., "dev mode").
  */
-@import 'build/development/WebApplication1/classic/resources/WebApplication1-all.css';
+@import 'cordova/www/modern/resources/WebApplication1-all.css';
 

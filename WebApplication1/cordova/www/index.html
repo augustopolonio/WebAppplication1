@@ -7,7 +7,53 @@
 
     <title>WebApplication1</title>
 
-    
+    <style type="text/css">
+        /**
+        * Example of an initial loading indicator.
+        * It is recommended to keep this as minimal as possible to provide instant feedback
+        * while other resources are still being loaded for the first time
+        */
+        html, body {
+            height: 100%;
+            background-color: #5fa2dd
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+
     <script type="text/javascript">
         var Ext = Ext || {}; // Ext namespace won't be defined yet...
 
@@ -36,13 +82,16 @@
 
             profile = 'modern';
 
+            //TODO: Melhorar local da url (trazer do webconfig)            
+            window.UrlWebApp1 = "<%= GetUrlWebApp1() %>";
+
             Ext.manifest = profile; // this name must match a build profile name
 
             // This function is called once the manifest is available but before
             // any data is pulled from it.
             //
             //return function (manifest) {
-                // peek at / modify the manifest object
+            // peek at / modify the manifest object
             //};
         };
     </script>
@@ -102,7 +151,15 @@ function(a){return function(b){c.onFullAssetUpdateLoaded(a,b)}}(b)):"delta"===b.
 c.updatedAssets.push(b)):b.uncache()}catch(k){g("Error parsing delta patch for "+b.assetConfig.path+" with hash "+a.assetConfig.hash+" . This asset will be uncached for future loading"),b.uncache()}if(0===c.remainingUpdatingAssets)c.onAllUpdatedAssetsReady()},onAllUpdatedAssetsReady:function(){var b;c.updatedAssetsReady=!0;if(c.updatedManifest){for(;0<c.removedAssets.length;)b=c.removedAssets.pop(),b.uncache();for(c.updatedManifest&&c.updatedManifest.cache();0<c.updatedAssets.length;)b=c.updatedAssets.pop(),
 b.cache()}c.notifyUpdateReady()},notifyUpdateReady:function(){if("checking"!==c.appCacheState&&c.updatedAssetsReady&&("updated"===c.appCacheState||c.updatedManifest))c.appUpdate={updated:!0,app:"updated"===c.appCacheState,manifest:c.updatedManifest&&c.updatedManifest.exportContent()},c.fireAppUpdate()},fireAppUpdate:function(){Ext.GlobalEvents&&Ext.defer(function(){Ext.GlobalEvents.fireEvent("appupdate",c.appUpdate)},100)},checksum:function(b,a){if(!b||!a)return!1;var c=!0,d=a.length,e=b.substring(0,
 1);"/"==e?b.substring(2,d+2)!==a&&(c=!1):"f"==e?b.substring(10,d+10)!==a&&(c=!1):"."==e&&b.substring(1,d+1)!==a&&(c=!1);return c},parseResult:function(b){var a={};(b.exception||0===b.status)&&!e.env.phantom?a.error=!0:200<=b.status&&300>b.status||304===b.status||e.env.phantom||0===b.status&&0<b.content.length?a.content=b.content:a.error=!0;return a}};return c}();Ext.manifest=Ext.manifest||"bootstrap";Ext.Microloader.run();</script>
+    <script src="cordova.js"></script>
 
 </head>
-<body></body>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
 </html>
+
