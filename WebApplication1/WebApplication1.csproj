@@ -6728,7 +6728,6 @@
     <Content Include="app.json" />
     <Content Include="classic.json" />
     <Content Include="modern.json" />
-    <None Include="Properties\PublishProfiles\Teste.pubxml" />
     <None Include="Properties\PublishProfiles\WebApplication1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
